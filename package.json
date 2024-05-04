@@ -1,0 +1,33 @@
+{
+  "name": "reacthero",
+  "version": "1.0.0",
+  "description": "Become React Hero",
+ 
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RachitGupta763/ReactHero.git"
+  },
+  "keywords": [
+    "reactHero"
+  ],
+  "author": "Rachit Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RachitGupta763/ReactHero/issues"
+  },
+  "homepage": "https://github.com/RachitGupta763/ReactHero#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ] 
+}
