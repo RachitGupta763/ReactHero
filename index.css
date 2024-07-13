@@ -1,0 +1,56 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+.Logo{
+    height:200px;
+    width: 200px;
+}
+.nav-item{
+    padding: 10px;
+    font-size: 35px;
+}
+.nav-item>ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-item>ul>li{
+    padding: 10px;
+    margin: 10px;
+}
+.ResCard{
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    background-color: beige;
+    text-align: center;
+    cursor: pointer;
+}
+.ResCard:hover{
+    border: 1px solid black;
+}
+.Search{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-style: italic;
+    width: 600px;
+    height: 40px;
+    margin: 0 auto;
+}
+.ResImg{
+    width: 180px;
+    height: 140px;
+}
+.Res-Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*
+*config driven UI
+*/

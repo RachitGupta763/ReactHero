@@ -4,6 +4,8 @@
   "description": "Become React Hero",
  
   "scripts": {
+    "start":"parcel index.html",
+    "build":"parcel bulid index.html",
     "test": "jest"
   },
   "repository": {
