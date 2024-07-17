@@ -15,3 +15,14 @@
 -Error Handling
 -Tree Shaking ->Remove unUsed code ans Suffling 
 -differnt dev and production bundles
+
+
+->Two types of Export/Import
+
+-->>default
+  Export default Component Name
+  Import Component Name from "Path"
+
+-->>Named
+  Export const Component Name
+   Import { Component Name} from "Path"

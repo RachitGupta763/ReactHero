@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Body from "./Component/Body"
+import Header from "./Component/Header"
 
 /**
  * Header
@@ -14,55 +16,8 @@ import ReactDOM from "react-dom/client";
  * ->Contact
  * ->DisClaimer
  */
-const Header = () => {
-    return (
-        <div className="header">
-            <div className="Logo-Container">
-                <img className="Logo"
-                src="https://graphicsfamily.com/wp-content/uploads/edd/2021/06/Editable-Photoshop-Food-Logo-Design-PNG-Transparent-1536x1536.png"
-                />
-            </div>
-            <div className="nav-item">
-                <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-                <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    );
 
-};
-const RestaurantCard = () =>{
-    return(
-      <div className="ResCard">
-        <img className="ResImg"
-                src="https://th.bing.com/th?q=Balushahi+Top+View&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247"
-                />
-           <h3>Hatras BaluSahi</h3>
-           <h4>Sweet Indian</h4>
-           <h4>RS. 60</h4>
-           <h4>4.5 STAR</h4>
-      </div>
-    )
-}
-const Body = () => {
-    return(
-        <div className="Body">
-            <div className="Search">
-                Search
-            </div>
-            <div className="Res-Container">
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-            </div>
 
-        </div>
-    )
-}
 const AppLayout = () =>{
     return <div className="app">
         <Header />
