@@ -1,7 +1,12 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import Body from "./Component/Body"
 import Header from "./Component/Header"
+import { BrowserRouter,createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
+import About from "./Component/About";
+import Contact from "./Component/Contact";
+import ErrorHandle from "./Component/ErrorHandle";
+import RestaurantMenu from "./Component/RestaurantMenu";
 
 /**
  * Header
@@ -17,16 +22,45 @@ import Header from "./Component/Header"
  * ->DisClaimer
  */
 
+const Grocery = lazy(() => import("./Component/Grocery"))
 
 const AppLayout = () =>{
     return <div className="app">
         <Header />
-        <Body />
+        <Outlet />
     </div>
 }
-
+const App = createBrowserRouter([
+    {
+        path:"/",
+        element:<AppLayout />,
+        children:[
+            {
+                path:"/",
+                element:<Body />
+            },
+            {
+                path:"/Grocery",
+                element:<Suspense><Grocery /></Suspense>
+            },
+            {
+                path:"/About",
+                element:<About />
+            },
+            {
+                path:"/Contact",
+                element:<Contact />
+            },
+            {
+                path:"/Restaurant/:id",
+                element:<RestaurantMenu />
+            }
+        ],
+        errorElement:<ErrorHandle />
+    }
+])
 const root=ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+root.render(<RouterProvider router={App}/>);
 // //using core react fundamental
 // const heading = React.createElement("h1",{id:"heading"},"Namaste React");
 // console.log(heading);

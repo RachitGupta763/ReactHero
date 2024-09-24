@@ -2,10 +2,9 @@
   "name": "reacthero",
   "version": "1.0.0",
   "description": "Become React Hero",
- 
   "scripts": {
-    "start":"parcel index.html",
-    "build":"parcel bulid index.html",
+    "start": "parcel index.html",
+    "build": "parcel bulid index.html",
     "test": "jest"
   },
   "repository": {
@@ -23,13 +22,19 @@
   "homepage": "https://github.com/RachitGupta763/ReactHero#readme",
   "devDependencies": {
     "parcel": "^2.12.0",
-    "process": "^0.11.10"
+    "postcss": "^8.4.40",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.7"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
+    "fetchapiservice": "^1.0.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
+    "react-router-dom": "^6.25.1"
   },
-  "browserslist":[
+  "browserslist": [
     "last 2 versions"
-  ] 
+  ]
 }

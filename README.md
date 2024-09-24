@@ -26,3 +26,19 @@
 -->>Named
   Export const Component Name
    Import { Component Name} from "Path"
+
+
+# Reducer
+
+->when we click on a add button it dispatches an action it calls a function i.e. Reducers  that modifies the slice of redux store.
+
+we will use "Selector" to update the cart item in UI. and this phenomena is knoen as Subscribe the Store.
+
+# Redux ToolKit
+
+- Install @reduxjs/toolkit and react-redux
+- Build our Store 
+- Connect our App to Store
+- Slice(Cart Slice)
+- Dispatch(action)
+- Selector  
